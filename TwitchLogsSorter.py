@@ -21,6 +21,7 @@ def CreateLog(name,line):
     fil.close()
 
 if __name__=='__main__':
+    os.chdir(CHANNEL_NAME)
     tfile=os.getcwd()+'\\chat.log'
     logfile = open(tfile,'r')
     loglines = lastline(logfile)
